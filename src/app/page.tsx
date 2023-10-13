@@ -25,7 +25,7 @@ export default function HomePage() {
   return (
     <main>
       <Head>
-        <title>Hi</title>
+        <title>Bigg Boss Telugu</title>
       </Head>
       <section className='bg-white'>
         <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
@@ -41,8 +41,8 @@ export default function HomePage() {
             </ArrowLink>
           </p>
 
-          <ButtonLink className='mt-6' href='/components' variant='light'>
-            See all components
+          <ButtonLink className='mt-6' href='/vote' variant='light'>
+            Vote Now
           </ButtonLink>
 
           <UnstyledLink
