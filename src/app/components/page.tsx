@@ -40,7 +40,7 @@ export default function ComponentPage() {
       >
         <div
           className={clsx(
-            'layout min-h-screen py-20',
+            'layout min-h-screen py-6',
             mode === 'dark' ? 'text-white' : 'text-black'
           )}
         >

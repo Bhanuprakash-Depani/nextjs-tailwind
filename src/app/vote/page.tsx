@@ -21,7 +21,7 @@ export default function ComponentPage() {
   return (
     <main>
       <section>
-        <div className={clsx('layout min-h-screen py-20 text-center')}>
+        <div className={clsx('layout min-h-screen py-6 text-center')}>
           {pollList.length === 0 && (
             <h2 className='text-red-400'>
               No active polls currently. Please visit again!

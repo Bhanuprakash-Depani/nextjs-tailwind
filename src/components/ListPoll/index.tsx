@@ -6,12 +6,13 @@ import { Fragment, useCallback } from 'react';
 import Button from '@/components/buttons/Button';
 
 export const ListPoll = ({ pollData }) => {
-  const onVoteHandler = useCallback(() => {
-    postVote();
+  const onVoteHandler = useCallback((data) => {
+    postVote(data);
   }, []);
 
-  const postVote = () => {
+  const postVote = (votedData) => {
     // TODO: Vote handler
+    console.log(votedData, ' -- selected vote details');
   };
 
   // const getGrids = (options: any) => (
@@ -61,7 +62,7 @@ export const ListPoll = ({ pollData }) => {
         <Button
           variant='primary'
           className='!py-1 px-3 !text-sm'
-          onClick={onVoteHandler}
+          onClick={() => onVoteHandler(options)}
         >
           Vote
         </Button>
